@@ -1,0 +1,328 @@
+body {
+    background: #E5E5E5;
+    margin: 1.5em auto;
+}
+main{
+    width: 90%;
+    height: 610px;
+    margin: 0 auto;
+}
+header {
+    width: 120px;
+    height: 48px;
+    margin: 0 0 80px 0;
+}
+#logo {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+ .panel-1{
+    width: 75%;
+     height: 100%;
+     float: left;
+ }
+.panel-texto-boton{
+    width: calc(100% - 125px);
+    height: 100%;
+    margin: 0 0 0 125px;
+    background:#F3F5FC;
+}
+#texto{
+    background:#F3F5FC;
+    color: #0A3871;
+    font-size: 32px;
+    border: 0px;
+    margin: 0 75px 0 0;
+    width: calc(100% - 85px);
+    overflow: auto;
+    resize: none;
+}
+#texto:focus{
+    outline: 0 none;
+}
+.caja-botones {
+    margin: 0 80px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.mensaje-error{
+    font-size: 12px;
+    margin: 16px 0px;
+    transition: 0.3s;
+}
+.boton{
+    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    display: block;
+    padding: 24px;
+    border-radius: 24px;
+    border: 0px;
+}
+.boton:hover{
+    opacity: 0.9;
+    transition: 0.2s;
+    padding: 0;
+    font-size: 26px;
+}
+.boton:active{
+    padding: 0;
+    font-size: 24px;
+    transition: 0.2s;
+}
+#encriptar{
+    background: #0A3871;
+    color: white;
+}
+#desencriptar{
+    border: 1px solid #0A3871;
+    background: transparent;
+}
+
+.panel-2{
+    width: 25%;
+    height: calc(100% + 100px);
+    float: right;
+    background-color:white;
+    position: relative;
+    top: -100px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.panel-img-mensaje {
+    margin: calc((700px - 398.217px)/2) 32px;
+  }
+#img-munheco {
+    box-sizing: content-box;
+    width: 100%;
+}
+.mensaje{
+    text-align: center;
+    margin: 32px 0 0 0;
+}
+#mensaje-1{
+    font-size: 24px;
+    font-weight: bold;
+    color: #343A40;
+    margin: 0 0 16px 0;
+}
+#mensaje-2{
+    font-size: 16px;
+    color: #495057;
+}
+::placeholder { color: #0A3871; }
+.texto-panel-2{
+    width: 100%;
+    height: calc(100% - 67px - 32px);
+    font-size: 24px;
+    padding: 32px;
+    color: #0A3871;   
+    overflow: auto;
+    box-sizing: border-box;
+}
+#copiar {
+    width: 70%;
+    margin: 10px auto;
+    left: 12px;
+    border: 1px solid #0A3871;
+    background: transparent;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.2s;
+}
+.datos {
+    width: 400px;
+    margin: 3em auto 0 auto;
+    padding: 0 5%;
+}
+.cajas{
+    display: inline-block;
+    margin: 25px 0;
+    width: calc(90%/4 + 4px);
+    height: 50px;
+}
+.imagenes{
+    width: 30px;
+    height: 30px;
+    margin: 0 calc((100% - 30px)/2);
+}
+.imagenes:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.imagenes:active{
+    width: 28px;
+    height: 28px;
+}
+.nombre{
+    text-align: center;
+}
+.creador{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.invisible{
+	display: none;
+}
+.error{
+    color: red;
+    font-size: 20px;
+    margin: 10px 0px;
+
+}
+@media screen and (max-width:480px){
+    main{
+        width: auto;
+        height: auto;
+    }
+    .panel-1{
+        width: auto;
+        height: auto;
+        float: none;
+    }
+    #texto{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .panel-texto-boton {
+        width: 90%;
+        margin: 0 auto 50px auto;
+    }
+    .caja-botones {
+        display: block;
+        margin: 0;
+        width: auto;
+    }
+    .boton{
+        box-sizing: content-box;
+        height: auto;
+        margin: 0 auto 20px auto;
+        width: 80%;
+    }
+    .boton:active{
+        transition: 0s;
+        padding: 24px;
+        font-size: 16px;
+    }
+
+    .boton:hover{
+        opacity: 0.9;
+        transition: 0.2s;
+        padding: 24px;
+        font-size: 16px;
+    }
+    .panel-2{
+        width: 90%;
+        height: auto;
+        float: none;
+        position: static;
+        margin: 0 auto;
+        padding: 32px 0 32px 0;
+    }
+    .panel-img-mensaje{
+        margin: 0;
+    }
+    .texto-panel-2 {
+        height: auto;
+        padding: 0 32px;
+    }
+    #img-munheco {
+        display: none;
+    }
+    .mensaje {
+        padding: 32px;
+        margin: 0;
+    }
+    #copiar{
+        position: static;
+        box-sizing: border-box;
+        margin: 32px auto 0 auto;
+    }
+    .datos{
+        width: auto;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:850px){
+    main{
+        width: auto;
+        height: auto;
+    }
+    .panel-1{
+        width: auto;
+        height: auto;
+        float: none;
+    }
+    #texto{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .panel-texto-boton {
+        width: 90%;
+        margin: 0 auto 50px auto;
+    }
+    .caja-botones {
+        margin: 0;
+        width: auto;
+    }
+    .boton{
+        box-sizing: content-box;
+        height: auto;
+        margin: 0 auto 20px auto;
+        width: 80%;
+    }
+    .boton:active{
+        transition: 0s;
+        padding: 24px;
+        font-size: 16px;
+    }
+
+    .boton:hover{
+        opacity: 0.9;
+        transition: 0.2s;
+        padding: 24px;
+        font-size: 16px;
+    }
+    #encriptar {
+        margin-right: 10px;
+    }
+    #desencriptar {
+        margin-left: 10px;
+    }
+    .panel-2{
+        width: 90%;
+        height: auto;
+        float: none;
+        position: static;
+        margin: 0 auto;
+        padding: 32px 0 32px 0;
+    }
+    .panel-img-mensaje{
+        margin: 0;
+    }
+    .texto-panel-2 {
+        height: auto;
+        padding: 0 32px;
+    }
+    #img-munheco {
+        display: none;
+    }
+    .mensaje {
+        padding: 32px;
+        margin: 0;
+    }
+    #copiar{
+        position: static;
+        box-sizing: border-box;
+        margin: 32px auto 0 auto;
+    }
+    .datos{
+        width: auto;
+    }
+}

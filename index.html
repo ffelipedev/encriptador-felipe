@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="img/Logo.png">
+        </header>
+        <main>
+            <div class="panel-1">
+                <div class="panel-texto-boton">
+                    <textarea id="texto" cols="45" rows="12" placeholder="Ingrese el texto aqui" style="height: 470px;"></textarea>
+                    <p class="mensaje-error">&excl; Solo letras minúsculas y sin acentos</p>
+                    <div class="caja-botones">
+                        <button class="boton" id="encriptar">Encriptar</button>
+                        <button class="boton" id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-2">
+                <div class="panel-img-mensaje">
+                    <img id="img-munheco" src="img/Muñeco.png">
+                    <div class="mensaje">
+                        <p id="mensaje-1">precione encriptar para </p>
+                        <p id="mensaje-2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="creador"> Abril-2023 Felipe Quiñemil  &copy;</p>
+        </footer>
+        <script src="js/encriptar.js"></script>
+        <script src="js/desencriptar.js"></script>
+        <script src="js/copiar.js"></script>
+        <script src="js/transiciones.js"></script>
+        <script src="js/validar_texto.js"></script>
+    </body>
+</html>
